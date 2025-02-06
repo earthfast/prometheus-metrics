@@ -1,0 +1,57 @@
+global:
+  evaluation_interval: 15s
+  scrape_interval: 15s
+scrape_configs:
+- job_name: content-nodes
+  metrics_path: /metrics
+  params:
+    Accept:
+    - text/plain
+  scheme: https
+  static_configs:
+  - targets:
+    - content-1.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-10.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-1737643447.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-1738349113.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-1738369957.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-2.us-east-1.sepolia-staging.earthfastnodes.com
+    - content-3.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-4.us-east-1.sepolia-staging.earthfastnodes.com
+    - content-5.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-6.us-east-1.sepolia-staging.earthfastnodes.com
+    - content-7.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-8.us-east-2.sepolia-staging.earthfastnodes.com
+    - content-9.us-east-1.sepolia-staging.earthfastnodes.com
+    - content1.use1.testnet-sepolia-staging.armadanodes.com
+    - content10.use1.testnet-sepolia-staging.armadanodes.com
+    - content11.use1.testnet-sepolia-staging.armadanodes.com
+    - content12.use1.testnet-sepolia-staging.armadanodes.com
+    - content13.use1.testnet-sepolia-staging.armadanodes.com
+    - content14.use1.testnet-sepolia-staging.armadanodes.com
+    - content15.use1.testnet-sepolia-staging.armadanodes.com
+    - content16.use1.testnet-sepolia-staging.armadanodes.com
+    - content17.use1.testnet-sepolia-staging.armadanodes.com
+    - content18.use1.testnet-sepolia-staging.armadanodes.com
+    - content19.use1.testnet-sepolia-staging.armadanodes.com
+    - content2.use1.testnet-sepolia-staging.armadanodes.com
+    - content20.use1.testnet-sepolia-staging.armadanodes.com
+    - content21.use1.testnet-sepolia-staging.armadanodes.com
+    - content22.use1.testnet-sepolia-staging.armadanodes.com
+    - content23.use1.testnet-sepolia-staging.armadanodes.com
+    - content24.use1.testnet-sepolia-staging.armadanodes.com
+    - content25.use1.testnet-sepolia-staging.armadanodes.com
+    - content3.use1.testnet-sepolia-staging.armadanodes.com
+    - content4.use1.testnet-sepolia-staging.armadanodes.com
+    - content5.use1.testnet-sepolia-staging.armadanodes.com
+    - content6.use1.testnet-sepolia-staging.armadanodes.com
+    - content7.use1.testnet-sepolia-staging.armadanodes.com
+    - content8.use1.testnet-sepolia-staging.armadanodes.com
+    - content9.use1.testnet-sepolia-staging.armadanodes.com
+    - sid.content-1.us-east-1.sepolia-staging.earthfastnodes.com
+  tls_config:
+    insecure_skip_verify: true
+- job_name: prometheus
+  static_configs:
+  - targets:
+    - localhost:9090

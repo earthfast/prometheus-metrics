@@ -1,0 +1,29 @@
+# Configuration and cache
+.cache/
+.npm/
+.cursor-server/
+data/
+myenv/
+
+# Log and temporary files
+*.log
+*.pid
+*.json
+!content-node.json
+
+# User and system files
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.selected_editor
+.sudo_as_admin_successful
+.viminfo
+
+# Environment files
+.env
+.ssh
+
+# Extensions and modules directories
+node_modules/
+extensions/
