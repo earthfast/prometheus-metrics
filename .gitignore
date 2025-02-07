@@ -27,3 +27,6 @@ myenv/
 # Extensions and modules directories
 node_modules/
 extensions/
+
+prometheus/prometheus.yml
+prometheus/prometheus.yml.backup
