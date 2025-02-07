@@ -2,6 +2,8 @@
 .cache/
 .npm/
 .cursor-server/
+.lesshst
+.config/
 data/
 myenv/
 
