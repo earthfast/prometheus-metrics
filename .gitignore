@@ -19,6 +19,7 @@ myenv/
 .selected_editor
 .sudo_as_admin_successful
 .viminfo
+venv/
 
 # Environment files
 .env
